@@ -1,1 +1,19 @@
 db/.env
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+
+# Secrets — khong bao gio commit
+.env
+keys/*
+!keys/.gitkeep
+
+# Claude Code
+.claude/
+CLAUDE.md
+CLAUDE.local.md

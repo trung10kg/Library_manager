@@ -1,0 +1,11 @@
+# Pin chinh xac. Docker cai dung file nay; libs/common duoc cai rieng
+# trong Dockerfile va khong keo them dependency nao ngoai danh sach duoi.
+fastapi==0.141.1
+uvicorn[standard]==0.53.0
+pydantic==2.13.5
+pydantic-settings==2.15.0
+sqlalchemy[asyncio]==2.0.54
+aiomysql==0.3.2
+pyjwt[crypto]==2.14.0
+httpx==0.28.1
+aio-pika==10.0.1

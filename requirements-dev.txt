@@ -1,0 +1,19 @@
+# Moi truong dev: MOT venv duy nhat o thu muc goc cho ca 5 service.
+# Trong Docker moi service chi cai requirements.txt cua rieng no.
+#
+#   python task.py setup
+#
+# Nap lai requirements cua ca 5 service de venv dev khop voi container.
+# pip tu bo trung lap giua cac file.
+-e ./libs/common
+-r services/auth-service/requirements.txt
+-r services/catalog-service/requirements.txt
+-r services/reader-service/requirements.txt
+-r services/circulation-service/requirements.txt
+-r services/billing-service/requirements.txt
+
+# Chi dung khi dev/test, khong vao container
+pytest==9.1.1
+pytest-asyncio==1.4.0
+respx==0.23.1
+ruff==0.16.8

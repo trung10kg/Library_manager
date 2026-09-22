@@ -1,0 +1,12 @@
+# Cac file duoc container hoac shell doc phai la LF.
+# Tren Windows, CRLF trong script se gay loi "bad interpreter" hoac
+# nginx doc sai directive.
+*.py        text eol=lf
+*.sh        text eol=lf
+*.conf      text eol=lf
+*.yml       text eol=lf
+*.yaml      text eol=lf
+*.toml      text eol=lf
+*.ini       text eol=lf
+Dockerfile  text eol=lf
+.env.example text eol=lf

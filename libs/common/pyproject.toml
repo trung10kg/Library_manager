@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "library-common"
+version = "0.1.0"
+description = "Code dung chung cho cac service cua he thong quan ly thu vien"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.115",
+    "pydantic>=2.9",
+    "pydantic-settings>=2.6",
+    "sqlalchemy[asyncio]>=2.0.36",
+    "pyjwt[crypto]>=2.9",
+    "httpx>=0.27",
+    "aio-pika>=9.4",
+]
+
+[tool.setuptools.packages.find]
+include = ["common*"]
+
+[tool.setuptools.package-data]
+common = ["py.typed"]

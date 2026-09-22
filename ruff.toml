@@ -1,0 +1,12 @@
+target-version = "py312"
+line-length = 100
+extend-exclude = [".venv"]
+
+[lint]
+select = ["E", "F", "I", "UP", "B", "ASYNC"]
+# B008: goi ham trong default argument. Depends() cua FastAPI la idiom chuan,
+# khong phai loi.
+ignore = ["B008"]
+
+[lint.isort]
+known-first-party = ["app", "common"]
