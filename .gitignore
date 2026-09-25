@@ -13,7 +13,12 @@ __pycache__/
 keys/*
 !keys/.gitkeep
 
+# Ban sao luu database (task.py db-backup) - chua du lieu that
+backups/
+
 # Claude Code
 .claude/
 CLAUDE.md
 CLAUDE.local.md
+# Schema/migration SQL - chi giu tren may, khong dua len repo
+db/
